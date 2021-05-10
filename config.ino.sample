@@ -1,0 +1,9 @@
+#define WELCOME_TEXT "Hello Marion!"
+
+#define WIFI_SSID "myssid"
+#define WIFI_PASSWORD "mypass"
+
+#define URL_TIME_GET "http://myserver/alarm-clock/time.php"
+#define URL_RING_TIME_GET "http://myserver/alarm-clock/ring.php"
+#define URL_IMAGE_RAND "http://myserver/alarm-clock/rand_image.php"
+#define URL_RINGTONE_RAND "http://myserver/alarm-clock/rand_ringtone.php"
