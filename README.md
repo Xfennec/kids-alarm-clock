@@ -29,15 +29,15 @@ Less than $40, add $10 if you need a prototype board, some wires and headers for
 Add the following libraries to your Arduino/PlatformIO/whatever setup:
  - TFT_eSPI (screen)
  - TJpg_Decoder
- - ESP8266Audio
+ - ESP8266Audio (ESP32 compliant) 
 
 Create a `config.ino` file (see `config.ino.sample`)
 
-You must also configure TFT_eSPI library, in its `User_Setup.h` (most values have correct default values):
+You must also configure TFT_eSPI library, in its `User_Setup.h` (most values have correct default):
 ```
 #define ILI9341_DRIVER
 …
-#define TFT_HEIGHT 240 // GC9A01 240 x 240
+#define TFT_HEIGHT 240
 …
 #define TFT_MISO 19
 #define TFT_MOSI 23
@@ -50,7 +50,7 @@ You must also configure TFT_eSPI library, in its `User_Setup.h` (most values hav
 ```
 
 ### Server
-In `config.ino`, 4 URLs a defined, see the following list.
+In `config.ino`, 4 URLs are defined, see the following list.
 You can drop the provided PHP script somewhere or write your own server following the correct data formats.
 
 - URL_TIME_GET (time.php): return the current date/time in `Y-m-d H:i:s.u` format (ex: `2021-05-10 11:24:36.254200`)
@@ -60,7 +60,7 @@ You can drop the provided PHP script somewhere or write your own server followin
 
 ### Configure ring time
 
-To configure the time (and days of the week) of the alaram with the provided scripts, see `ring.php` → `ring_this_day()` function.
+To configure the time (and days of the week) of the alarm with the provided scripts, see `ring.php` → `ring_this_day()` function.
 
 ### Assets
 Provided PHP scripts will look for the following sub-directories:
