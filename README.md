@@ -20,6 +20,8 @@ Less than $40, add $10 if you need a prototype board, some wires and headers for
 
 ![alarm clock components](https://github.com/Xfennec/kids-alarm-clock/raw/main/doc/images/components.jpg)
 
+TODO: add schematics
+
 ## Software
 
 ### ESP program
