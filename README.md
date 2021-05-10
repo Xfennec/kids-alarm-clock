@@ -1,10 +1,14 @@
-# Kids Alarm Clock
+# DIY Kids Alarm Clock
 
 A DIY alarm clock for kids: display cute pictures and play their favorite tunes when it's time to wake up!
 
-photo1
+Approved by Marion, 7.
+
+![DIY alarm clock](https://github.com/Xfennec/kids-alarm-clock/raw/main/doc/images/cased.jpg)
 
 Uses WiFi to get time, ring settings, pictures and tunes: no fiddly local setup, no power loss resets.
+
+More a proof-of-concept than anything else, feel free to hack around!
 
 ## Hardware
  - ESP32 (ESP8266 is probably memory short)
@@ -14,7 +18,7 @@ Uses WiFi to get time, ring settings, pictures and tunes: no fiddly local setup,
 
 Less than $40, add $10 if you need a prototype board, some wires and headers for a clean setup.
 
-photo2
+![alarm clock components](https://github.com/Xfennec/kids-alarm-clock/raw/main/doc/images/components.jpg)
 
 ## Software
 
