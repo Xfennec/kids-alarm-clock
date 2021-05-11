@@ -1,4 +1,14 @@
 
+// Configure TFP display
+void setupDisplay() {
+  tft.init();
+  tft.setRotation(1);
+  tft.fillScreen(TFT_BLACK);
+  tft.setTextColor(TFT_WHITE, TFT_BLACK);
+
+  tft.drawCentreString(WELCOME_TEXT, 160, 110, 4);
+}
+
 // Draw the current time using big numbers, with seconds
 void drawTime(int ypos) {
   static byte omm = 99, oss = 99;
